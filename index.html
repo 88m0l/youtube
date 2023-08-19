@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title> شاهدني </title>
+</head>
+<body class="mt-5 ">
+  <div class="layer"></div>
+  <div id="top-menu">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-3">
+        <i class="fa-solid fa-bars fa-lg" id="toggler"></i>
+        <b>
+          <a class="navbar-brand ms-3" href="index.html">
+            شاهدني
+            <span class="video-icon"> <i class="fa-brands fa-youtube"></i> </span>
+          </a>
+        </b>        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item first-list-element">
+              <a class="nav-link me-1" href="index.html">الفيديوهات المقترحة </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-lg-3" href="#">المرفوعه حديثا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> الفيديوهات الرائجة </a>
+            </li>
+          </ul>
+          <div class="d-flex my-2 my-lg-0 me-3">
+            <input class="form-control me-sm-2 form-hide" type="search" placeholder="Search">
+            <button onclick="location.href='search.html';" class="btn btn-outline-info my-2 my-sm-0 form-hide" type="submit">أبحث</button>
+          </div>
+        </div>
+        <i class="fa-solid fa-magnifying-glass me-4 search-icon"></i>
+        <a class="nav-link login" href="#" data-bs-toggle="modal" data-bs-target="#loginmodle">تسجيل الدخول</a>
+      </nav>
+      <input type="search" class="form-control search-input" placeholder="ابحث عن ...">
+          <!-- Modal -->
+          <div class="modal fade" id="loginmodle" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول :</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="text" class="col-form-label">البريد الإلكتروني :</label>
+                      <input type="text" class="form-control" id="text">
+                    </div>
+                    <div class="form-group">
+                      <label for="password" class="col-form-label">كلمة المرور :</label>
+                      <input type="password" class="form-control" id="password">
+                    </div>
+                  </form>
+          
+                </div>
+                <div class="modal-footer">
+                  <a href="#">نسيت كلمة المرور</a>
+                  <a href="#" class="mx-auto"> إنشاء حساب جديد </a>
+                  <button type="button" class="btn btn-primary">تسجيل</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pt-4">
+            <div id="wrap">
+              <div class="sidebar">
+                <ul class="list-group list-group-flush ps-0">
+                  <a href="index.html" class="list-group-item list-group-item-action">
+                    <i class="fas fa-home me-2 purple"></i> الصفحة الرئيسية
+                  </a>
+                  <a href="index.html" class="list-group-item list-group-item-action">
+                      <i class="fab fa-algolia me-2 purple"></i> الفيديوهات المقترحة
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                      <i class="far fa-plus-square me-2 purple"></i> المرفوعة حديثًا
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-fire-alt me-2 purple"></i> الفيديوهات الرائجة
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-fire-alt me-2 purple"></i> فيديوهاتي
+                  </a>
+                  <a href="log.html" class="list-group-item list-group-item-action">
+                      <i class="fas fa-history me-2 purple"></i> سجل المشاهدة
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                      <i class="far fa-share-square me-2 purple"></i> الإشتراكات
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-film me-2 purple"></i> الأفلام والعروض
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-gamepad me-2 purple"></i> ألعاب فيديو
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-tshirt me-2 purple"></i> الموضة والجمال
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-graduation-cap me-2 purple"></i> محتوى تعليمي
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-cog me-2 purple"></i> الإعدادات
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-question-circle me-2 purple"></i> مساعدة
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                      <i>الموقع الرسمي ل شاهدني&copy;<br> متوفر على المتصفحات</i>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+                <!-- Content Body -->
+          <div class="content m-4">
+            <h4 class="py-5 ms-3"> الفيديوهات المقترحة </h4>
+            <div class="row">
+                <!-- Card start 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="card-group">
+                    <div class="card mb-4 p-1">
+                      <div class="card-icons">
+                        <a href="watch.html">
+                          <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">
+                          <time>9:20</time>
+                          <i class="fa-solid fa-play fa-2xl"></i>
+                        </a>
+                      </div>
+                      <a href="watch.html">
+                        <div class="card-body p-0">
+                          <p class="card-title">شرح فلسفة restful - تعلم كيف تبني واجهات rest برمجيه</p>
+                        </div>
+                      </a>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          <span class="d-block"><i class="fa-solid fa-film"></i> <span>220 ألف مشاهدة</span></span>
+                          <i class="fa-solid fa-clock"></i> <span>قبل 5 أشهر</span>
+                        </small>
+                      </div>
+                      <a href="channel.html" class="channel-image">
+                        <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ms-2" width="30">
+                        <span class="card-text">أكادمية حسوب</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card start 2 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="card-group">
+                    <div class="card mb-4 p-1">
+                      <div class="card-icons">
+                        <a href="watch.html">
+                          <img src="img/thumbnail/quran2.jpg" class="card-img-top" alt="card image">
+                          <time>12:40</time>
+                          <i class="fa-solid fa-play fa-2xl"></i>
+                        </a>
+                      </div>
+                      <a href="watch.html">
+                        <div class="card-body p-0">
+                          <p class="card-title"> أستمع الى تلاوة هادئه من القارئ ماهر المعقيقلي من سورة الضحى</p>
+                        </div>
+                      </a>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          <span class="d-block"><i class="fa-solid fa-film"></i> <span>14 ألف مشاهدة</span></span>
+                          <i class="fa-solid fa-clock"></i> <span>قبل 3 أشهر</span>
+                        </small>
+                      </div>
+                      <a href="channel.html" class="channel-image">
+                        <img src="img/quran.webp" alt="channel image" class="rounded-circle my-2 ms-2" width="30">
+                        <span class="card-text">قرءان كريم</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card start 3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="card-group">
+                    <div class="card mb-4 p-1">
+                      <div class="card-icons">
+                        <a href="watch.html">
+                          <img src="img/thumbnail/wwe1.jpg" class="card-img-top" alt="card image">
+                          <time>13:54</time>
+                          <i class="fa-solid fa-play fa-2xl"></i>
+                        </a>
+                      </div>
+                      <a href="watch.html">
+                        <div class="card-body p-0">
+                          <p class="card-title"> شاهد آخر أخبار البطولة وحصول رومان رينز على اللقب بعد مباراة قوية</p>
+                        </div>
+                      </a>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          <span class="d-block"><i class="fa-solid fa-film"></i> <span>9 آلاف مشاهدة</span></span>
+                          <i class="fa-solid fa-clock"></i> <span>قبل 1 أشهر</span>
+                        </small>
+                      </div>
+                      <a href="channel.html" class="channel-image">
+                        <img src="img/wwe.png" alt="channel image" class="rounded-circle my-2 ms-2" width="30">
+                        <span class="card-text">WWE</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card start 4 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="card-group">
+                    <div class="card mb-4 p-1">
+                      <div class="card-icons">
+                        <a href="watch.html">
+                          <img src="img/thumbnail/wwe2.jpg" class="card-img-top" alt="card image">
+                          <time>11:27</time>
+                          <i class="fa-solid fa-play fa-2xl"></i>
+                        </a>
+                      </div>
+                      <a href="watch.html">
+                        <div class="card-body p-0">
+                          <p class="card-title">حصري - شاهد غدرة جاي اوسو لرومن رينز و سامي زين وردة فعل بول هيمان </p>
+                        </div>
+                      </a>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          <span class="d-block"><i class="fa-solid fa-film"></i> <span>56 ألف مشاهدة</span></span>
+                          <i class="fa-solid fa-clock"></i> <span>قبل 7 أشهر</span>
+                        </small>
+                      </div>
+                      <a href="channel.html" class="channel-image">
+                        <img src="img/wwe.png" alt="channel image" class="rounded-circle my-2 ms-2" width="30">
+                        <span class="card-text">WWE</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card start 5 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="card-group">
+                    <div class="card mb-4 p-1">
+                      <div class="card-icons">
+                        <a href="watch.html">
+                          <img src="img/thumbnail/quran1.jpg" class="card-img-top" alt="card image">
+                          <time>8:29</time>
+                          <i class="fa-solid fa-play fa-2xl"></i>
+                        </a>
+                      </div>
+                      <a href="watch.html">
+                        <div class="card-body p-0">
+                          <p class="card-title">سورة البقره في الحرم المكي من القارئ عبدالباسط 2016</p>
+                        </div>
+                      </a>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          <span class="d-block"><i class="fa-solid fa-film"></i> <span>1.5 مليون مشاهدة</span></span>
+                          <i class="fa-solid fa-clock"></i> <span>قبل 8 أشهر</span>
+                        </small>
+                      </div>
+                      <a href="channel.html" class="channel-image">
+                        <img src="img/quran.webp" alt="channel image" class="rounded-circle my-2 ms-2" width="30">
+                        <span class="card-text">قرءان كريم</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card start 6 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="card-group">
+                    <div class="card mb-4 p-1">
+                      <div class="card-icons">
+                        <a href="watch.html">
+                          <img src="img/thumbnail/wwe3.jpg" class="card-img-top" alt="card image">
+                          <time>13:36</time>
+                          <i class="fa-solid fa-play fa-2xl"></i>
+                        </a>
+                      </div>
+                      <a href="watch.html">
+                        <div class="card-body p-0">
+                          <p class="card-title"> أهم اللحظات في راس المينا 2018 لأهم 10 مصارعين </p>
+                        </div>
+                      </a>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          <span class="d-block"><i class="fa-solid fa-film"></i> <span>113 ألف مشاهدة</span></span>
+                          <i class="fa-solid fa-clock"></i> <span>قبل 9 أشهر</span>
+                        </small>
+                      </div>
+                      <a href="channel.html" class="channel-image">
+                        <img src="img/wwe.png" alt="channel image" class="rounded-circle my-2 ms-2" width="30">
+                        <span class="card-text">WWE</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card start 7 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="card-group">
+                    <div class="card mb-4 p-1">
+                      <div class="card-icons">
+                        <a href="watch.html">
+                          <img src="img/thumbnail/php.jpg" class="card-img-top" alt="card image">
+                          <time>16:45</time>
+                          <i class="fa-solid fa-play fa-2xl"></i>
+                        </a>
+                      </div>
+                      <a href="watch.html">
+                        <div class="card-body p-0">
+                          <p class="card-title">دورة تطوير تطبيقات الويب باستخدام لغة PHP - أكاديمية حسوب</p>
+                        </div>
+                      </a>
+                      <div class="card-footer">
+                        <small class="text-muted">
+                          <span class="d-block"><i class="fa-solid fa-film"></i> <span>3 مليون مشاهدة</span></span>
+                          <i class="fa-solid fa-clock"></i> <span>قبل 12 أشهر</span>
+                        </small>
+                      </div>
+                      <a href="channel.html" class="channel-image">
+                        <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ms-2" width="30">
+                        <span class="card-text">أكادمية حسوب</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card start 8 --> 
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card-group">
+                  <div class="card mb-4 p-1">
+                    <div class="card-icons">
+                      <a href="watch.html">
+                        <img src="img/thumbnail/wwe4.jpg" class="card-img-top" alt="card image">
+                        <time>10:47</time>
+                        <i class="fa-solid fa-play fa-2xl"></i>
+                      </a>
+                    </div>
+                    <a href="watch.html">
+                      <div class="card-body p-0">
+                        <p class="card-title">شاهد ماذا قال هيمان لجاي اوسو (كلام قوي ومهين)</p>
+                      </div>
+                    </a>
+                    <div class="card-footer">
+                      <small class="text-muted">
+                        <span class="d-block"><i class="fa-solid fa-film"></i> <span> 83ألف مشاهدة</span></span>
+                        <i class="fa-solid fa-clock"></i> <span>قبل 4 أشهر</span>
+                      </small>
+                    </div>
+                    <a href="channel.html" class="channel-image">
+                      <img src="img/wwe.png" alt="channel image" class="rounded-circle my-2 ms-2" width="30">
+                      <span class="card-text">WWE</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card start 9 -->
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card-group">
+                  <div class="card mb-4 p-1">
+                    <div class="card-icons">
+                      <a href="watch.html">
+                        <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">
+                        <time>8:23</time>
+                        <i class="fa-solid fa-play fa-2xl"></i>
+                      </a>
+                    </div>
+                    <a href="watch.html">
+                      <div class="card-body p-0">
+                        <p class="card-title">شرح فلسفة restful - تعلم كيف تبني واجهات rest برمجيه</p>
+                      </div>
+                    </a>
+                    <div class="card-footer">
+                      <small class="text-muted">
+                        <span class="d-block"><i class="fa-solid fa-film"></i> <span>100 ألف مشاهدة</span></span>
+                        <i class="fa-solid fa-clock"></i> <span>قبل 9 أشهر</span>
+                      </small>
+                    </div>
+                    <a href="channel.html" class="channel-image">
+                      <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ms-2" width="30">
+                      <span class="card-text">أكادمية حسوب</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card start 10 -->
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card-group">
+                  <div class="card mb-4 p-1">
+                    <div class="card-icons">
+                      <a href="watch.html">
+                        <img src="img/thumbnail/quran4.jpg" class="card-img-top" alt="card image">
+                        <time>8:29</time>
+                        <i class="fa-solid fa-play fa-2xl"></i>
+                      </a>
+                    </div>
+                    <a href="watch.html">
+                      <div class="card-body p-0">
+                        <p class="card-title"> استكنان سورة الاعلى مع القارئ ماهر المعقيقلي هدوئ </p>
+                      </div>
+                    </a>
+                    <div class="card-footer">
+                      <small class="text-muted">
+                        <span class="d-block"><i class="fa-solid fa-film"></i> <span>6 آلاف مشاهدة</span></span>
+                        <i class="fa-solid fa-clock"></i> <span>قبل 1 أشهر</span>
+                      </small>
+                    </div>
+                    <a href="channel.html" class="channel-image">
+                      <img src="img/quran.webp" alt="channel image" class="rounded-circle my-2 ms-2" width="30">
+                      <span class="card-text">قرءان كريم</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card start 11 -->
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card-group">
+                  <div class="card mb-4 p-1">
+                    <div class="card-icons">
+                      <a href="watch.html">
+                        <img src="img/thumbnail/php.jpg" class="card-img-top" alt="card image">
+                        <time>10:35</time>
+                        <i class="fa-solid fa-play fa-2xl"></i>
+                      </a>
+                    </div>
+                    <a href="watch.html">
+                      <div class="card-body p-0">
+                        <p class="card-title"> دورة تطوير تطبيقات الويب باستخدام لغة PHP - أكاديمية حسوب </p>
+                      </div>
+                    </a>
+                    <div class="card-footer">
+                      <small class="text-muted">
+                        <span class="d-block"><i class="fa-solid fa-film"></i> <span>638 ألف مشاهدة</span></span>
+                        <i class="fa-solid fa-clock"></i> <span>قبل 8 أشهر</span>
+                      </small>
+                    </div>
+                    <a href="channel.html" class="channel-image">
+                      <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ms-2" width="30">
+                      <span class="card-text">أكادمية حسوب</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card start 12 -->
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card-group">
+                  <div class="card mb-4 p-1">
+                    <div class="card-icons">
+                      <a href="watch.html">
+                        <img src="img/thumbnail/wwe5.jpg" class="card-img-top" alt="card image">
+                        <time>5:30</time>
+                        <i class="fa-solid fa-play fa-2xl"></i>
+                      </a>
+                    </div>
+                    <a href="watch.html">
+                      <div class="card-body p-0">
+                        <p class="card-title"> خمس حقائق قد لا تعلمها عم الاسطوره رومان رينز </p>
+                      </div>
+                    </a>
+                    <div class="card-footer">
+                      <small class="text-muted">
+                        <span class="d-block"><i class="fa-solid fa-film"></i> <span>391 ألف مشاهدة</span></span>
+                        <i class="fa-solid fa-clock"></i> <span>قبل 11 أشهر</span>
+                      </small>
+                    </div>
+                    <a href="channel.html" class="channel-image">
+                      <img src="img/wwe.png" alt="channel image" class="rounded-circle my-2 ms-2" width="30">
+                      <span class="card-text">WWE</span>
+                    </a>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="https://kit.fontawesome.com/41938ec886.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+</script><script src="JS/popper.min.js"></script>
+<script src="JS/bootstrap.js"></script>
+<script src="JS/index.js"></script>
+</html>
